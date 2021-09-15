@@ -1,0 +1,33 @@
+.buttonNavbar {
+    background-color: #323D87;
+    border-radius: .3em;
+    font-family: -apple-system, Roboto, sans-serif;
+    margin-left: .6em;
+
+}
+.buttonNavbar span{
+    color: white;
+}
+
+.buttonNavbarOutiline{
+    background-color: white;
+    border-radius: 2px;
+    margin-left: .6em;
+    border: solid 1px #323D87;
+    font-family: -apple-system, Roboto, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buttonNavbarOutiline span{
+    color: #323D87;
+}
+
+
+.buttonNavbarNormal:hover{
+    border-bottom: solid 2px #323D87;
+}
+
+.buttonNavbarNormal span{
+    color: #323D87
+}

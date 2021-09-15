@@ -1,0 +1,17 @@
+
+
+.itemsNavbarToRight{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.layoutConfigNavbar{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.layoutBody{
+    background-color: #ECECEC;
+    min-height: 100vh;
+    max-height: 200vh;
+}
