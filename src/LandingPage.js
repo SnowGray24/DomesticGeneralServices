@@ -2,7 +2,7 @@ import BootStrapNavbar from './components/BootStrapNavbar';
 import './css/layout.css';
 
 
-function Home() {
+function LandingPage() {
   return (
     <div className="layoutBody">
       <header className="App-header">
@@ -12,5 +12,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default LandingPage;
 

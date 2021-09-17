@@ -1,5 +1,21 @@
 
+/* CSS de configurações Gerais */
+.layoutCentralizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.layoutOptions{
+    display: flex;
+    align-items:stretch;
+}
+/*********************************/
+
+
+
+
+/* CSS especifico para a tela do LandingPage */
 .itemsNavbarToRight{
     display: flex;
     justify-content:flex-end;
@@ -15,4 +31,35 @@
     min-height: 100vh;
     max-height: 200vh;
 }
+/*********************************/
 
+
+
+
+/* CSS especifico para a tela do CadastroPrestador */
+.cadastroPrestador{
+    display: flex;
+}
+
+.layoutBranco{
+    background-color: white;
+    position: relative;
+    height: 100vh;
+    width: 60%;
+}
+
+.layoutAzul{
+    background-color: #323D87;
+    position: relative;
+    height: 100vh;
+    width: 40%;
+}
+
+.fontConfig{
+    color: rgba(0, 0, 0, 0.85);
+    size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: normal;
+}
+/*********************************/
