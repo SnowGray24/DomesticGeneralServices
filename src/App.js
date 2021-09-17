@@ -1,14 +1,10 @@
-import BootStrapNavbar from './components/BootStrapNavbar';
-import './css/layout.css';
+import React from 'react';
+import Routes from "./Router";
 
 
 function App() {
   return (
-    <div className="layoutBody">
-      <header className="App-header">
-        <BootStrapNavbar />
-      </header>
-    </div>
+    <Routes/>
   );
 }
 
