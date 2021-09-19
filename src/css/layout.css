@@ -14,7 +14,6 @@
 
 
 
-
 /* CSS especifico para a tela do LandingPage */
 .itemsNavbarToRight{
     display: flex;
@@ -44,14 +43,17 @@
 .layoutBranco{
     background-color: white;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 2000px;
     width: 60%;
 }
 
 .layoutAzul{
     background-color: #323D87;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 2000px;
+
     width: 40%;
 }
 
@@ -62,4 +64,25 @@
     font-weight: 300;
     font-style: normal;
 }
+
+.formConfigCadastroPrestador{
+    width: 60%;
+}
+
+.formConfigCadastroPrestador Label{
+    color:rgba(0, 0, 0, 0.65);
+}
+
+.campoObrigatorio{
+    color: rgba(255, 77, 79, 1);
+}
+
+.facaLogin{
+    color: #323D87;
+}
+
+.logoSite{
+    margin-top: 56px;
+}
+
 /*********************************/

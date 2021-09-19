@@ -31,3 +31,22 @@
 .buttonNavbarNormal span{
     color: #323D87
 }
+
+.btCancelar {
+    border: 1px solid #FF4842;
+    color: #FF4842;
+    width: 210px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.btProx{
+    border: 1px solid #323D87;
+    color: #FFFFFF;
+    width: 210px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #323D87;
+    margin-left: 1em;
+}

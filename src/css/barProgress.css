@@ -1,6 +1,9 @@
 .barProgress{
     display: flex;
 }
+.barProgressActive{
+    display: flex;
+}
 
 .numberProgress{
     height: 32px;
@@ -14,9 +17,29 @@
     align-items: center;
     justify-content: center;
 }
+.numberProgressActive{
+    height: 32px;
+    width: 32px;
+    border: 1px solid rgba(50, 61, 135, 1);
+    border-radius: 32px;
+    color: white;
+    background-color: rgba(50, 61, 135, 1);
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .optionProgress{
     color: rgba(0, 0, 0, 0.25);
+    margin-left: .7em;
+    font-size: 15px;
+    line-height: 32px;
+    width: 110px;
+}
+.optionProgressActive{
+    color: rgba(0, 0, 0, 0.85);
     margin-left: .7em;
     font-size: 15px;
     line-height: 32px;
