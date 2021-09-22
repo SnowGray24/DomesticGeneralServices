@@ -15,9 +15,19 @@ function CadastroPrestador (){
         if (fieldForm === 1){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "block";
+            document.getElementById("formField3").style.display = "none";
+            document.getElementById("formField4").style.display = "none";
+
         }else if (fieldForm === 2){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "none";
+            document.getElementById("formField3").style.display = "block";
+            document.getElementById("formField4").style.display = "none";
+        }else if (fieldForm === 3){
+            document.getElementById("formField1").style.display = "none";
+            document.getElementById("formField2").style.display = "none";
+            document.getElementById("formField3").style.display = "none";
+            document.getElementById("formField4").style.display = "block";
         }
 
         setFieldForm(fieldForm + 1);
@@ -171,6 +181,47 @@ function CadastroPrestador (){
                         <Input type="text" name="pontoDEreferencia" id="examplePReferencia" />
                     </FormGroup>
                 </Form>
+
+                <Form Form id="formField3" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
+
+                    <div><Label><span className="campoObrigatorio">*</span> Categorias</Label></div>
+                    <FormGroup check inline>
+                        <Label check>
+                        <Input type="checkbox" /> Limpeza
+                        </Label>
+                    </FormGroup>
+
+                    <FormGroup check inline>
+                        <Label check>
+                        <Input type="checkbox" /> Mecânica
+                        </Label>
+                    </FormGroup>
+
+
+
+
+
+                    <FormGroup>
+                        <Label for="exampleDescricao"><span className="campoObrigatorio">*</span> Descrição</Label>
+                        <Input type="textarea" name="descricao" id="exampleDescricao" />
+                    </FormGroup>
+
+                </Form>
+
+
+
+                <Form id="formField4" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
+                    <FormGroup>
+                        <Label for="exampleEmail" hidden><span className="campoObrigatorio">*</span> Email</Label>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="Insira seu email" />
+                    </FormGroup>
+
+                    <FormGroup>
+                        <Label for="examplePassword" hidden><span className="campoObrigatorio">*</span> Senha</Label>
+                        <Input type="password" name="password" id="examplePassword" placeholder="Insira sua senha" />
+                    </FormGroup>
+                </Form>
+
 
 
                 <div style={{marginTop: "30px"}}>
