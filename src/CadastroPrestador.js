@@ -11,13 +11,44 @@ import { Col, Row, Form, FormGroup, Label, Input } from 'reactstrap';
 function CadastroPrestador (){
     const [fieldForm, setFieldForm] = useState(1);
 
-    const proxForm = () =>{
-        if (fieldForm === 1){
+    const antForm = () =>{
+        if (fieldForm === 4){
+            document.getElementById("formField1").style.display = "none";
+            document.getElementById("formField2").style.display = "none";
+            document.getElementById("formField3").style.display = "block";
+            document.getElementById("formField4").style.display = "none";
+        }else if (fieldForm === 3){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "block";
             document.getElementById("formField3").style.display = "none";
             document.getElementById("formField4").style.display = "none";
+        }else if (fieldForm === 2){
+            document.getElementById("formField1").style.display = "block";
+            document.getElementById("formField2").style.display = "none";
+            document.getElementById("formField3").style.display = "none";
+            document.getElementById("formField4").style.display = "none";
+            
 
+            
+            document.getElementById("btAnt").style.display = "none";
+            document.getElementById("btCancelar").style.display = "block";
+
+        }
+
+        if (fieldForm > 1)
+            setFieldForm(fieldForm - 1);
+
+    }
+
+    const proxForm = () =>{
+        if (fieldForm === 1){
+            document.getElementById("btAnt").style.display = "block";
+            document.getElementById("btCancelar").style.display = "none";
+
+            document.getElementById("formField1").style.display = "none";
+            document.getElementById("formField2").style.display = "block";
+            document.getElementById("formField3").style.display = "none";
+            document.getElementById("formField4").style.display = "none";
         }else if (fieldForm === 2){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "none";
@@ -30,17 +61,11 @@ function CadastroPrestador (){
             document.getElementById("formField4").style.display = "block";
         }
 
-        setFieldForm(fieldForm + 1);
-        verificationLimits();
+        if (fieldForm < 4)
+            setFieldForm(fieldForm + 1);
+        
+        console.log(fieldForm);
 
-    }
-
-    const verificationLimits = () =>{
-        if (fieldForm > 3){
-            setFieldForm(4);
-        }else if (fieldForm < 1){
-            setFieldForm(1);
-        }
     }
 
 
@@ -224,19 +249,28 @@ function CadastroPrestador (){
 
 
 
-                <div style={{marginTop: "30px"}}>
-                    <button className="btCancelar">Cancelar</button>
-                    <button className="btProx" onClick={proxForm} >Continuar</button>
-                </div>
+                <Row style={{marginTop: "30px"}}>
+                    <Col id="btCancelar">
+                        <a href="/"><button className="btCancelar">Cancelar</button></a>
+                    </Col>
 
-                <p style={{marginTop: "14px"}}>Já tem uma conta? <a href="/" className="facaLogin">Faça login.</a></p>
+                    <Col id="btAnt" style={{display: "none"}}>
+                        <button className="btAnt" onClick={antForm}>Voltar</button>
+                    </Col>
+
+                    <Col>
+                        <button className="btProx" onClick={proxForm} >Continuar</button>
+                    </Col>
+                </Row>
+
+                <p style={{marginTop: "14px"}}>Já tem uma conta? <a href="/" style={{textDecoration: "none"}} className="facaLogin">Faça login.</a></p>
 
 
 
             </section>
 
             <section className="layoutAzul">
-
+                <p style={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", marginTop: "165px", fontSize: "36px"}}>Reinvente-se!<br /><span>Seja <span style={{fontWeight: "bold"}}>Torxs Services</span></span></p>
             </section>
         </div>
 
