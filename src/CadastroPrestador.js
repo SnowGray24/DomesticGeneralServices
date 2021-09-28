@@ -17,6 +17,9 @@ function CadastroPrestador (){
             document.getElementById("formField2").style.display = "none";
             document.getElementById("formField3").style.display = "block";
             document.getElementById("formField4").style.display = "none";
+
+            document.getElementById("btConcluirCadastro").style.display = "none";
+            document.getElementById("btContinuar").style.display = "block";
         }else if (fieldForm === 3){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "block";
@@ -59,6 +62,9 @@ function CadastroPrestador (){
             document.getElementById("formField2").style.display = "none";
             document.getElementById("formField3").style.display = "none";
             document.getElementById("formField4").style.display = "block";
+
+            document.getElementById("btConcluirCadastro").style.display = "block";
+            document.getElementById("btContinuar").style.display = "none";
         }
 
         if (fieldForm < 4)
@@ -91,18 +97,18 @@ function CadastroPrestador (){
                 <Form id="formField1" style={{marginTop: "37px"}} className="formConfigCadastroPrestador">
 
                     <FormGroup>
-                        <Label for="exampleEmail"><span className="campoObrigatorio">*</span> Nome</Label>
-                        <Input type="email" name="email" id="exampleEmail" />
+                        <Label for="exampleNome"><span className="campoObrigatorio">*</span> Nome</Label>
+                        <Input type="nome" name="nome" id="exampleNome" placeholder="Insira seu nome" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleCPF"><span className="campoObrigatorio">*</span> CPF</Label>
-                        <Input type="text" name="cpf" id="exampleCPF" />
+                        <Input type="text" name="cpf" id="exampleCPF" placeholder="Insira seu CPF" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleCNPJ">CNPJ</Label>
-                        <Input type="text" name="cnpj" id="exampleCNPJ" />
+                        <Input type="text" name="cnpj" id="exampleCNPJ" placeholder="Insira seu CNPJ" />
                     </FormGroup>
 
 
@@ -110,7 +116,7 @@ function CadastroPrestador (){
                         <Col>
                             <FormGroup>
                                 <Label for="exampleTelefone"><span className="campoObrigatorio">*</span> Telefone</Label>
-                                <Input type="text" name="telefone" id="exampleTelefone" />
+                                <Input type="text" name="telefone" id="exampleTelefone" placeholder="(DDD) 90000-0000" />
                             </FormGroup>
                         </Col>
 
@@ -129,7 +135,7 @@ function CadastroPrestador (){
 
                     <FormGroup>
                         <Label><span className="campoObrigatorio">*</span> Sexo</Label>
-                        <Input type="select" bsSize="sm" placeholder="Escolha um gênero">
+                        <Input type="select" bsSize="sm" placeholder="Selecione seu sexo">
                             <option>Masculino</option>
                             <option>Feminino</option>
                             <option>Outros</option>
@@ -143,7 +149,7 @@ function CadastroPrestador (){
                 <Form id="formField2" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
                     <FormGroup>
                         <Label><span className="campoObrigatorio">*</span> UF</Label>
-                        <Input type="select" bsSize="sm" placeholder="Escolha um gênero">
+                        <Input type="select" bsSize="sm" placeholder="Selecione a UF">
                             <option>AC</option>
                             <option>AL</option>
                             <option>AP</option>
@@ -178,32 +184,32 @@ function CadastroPrestador (){
 
                     <FormGroup>
                         <Label for="exampleCEP"><span className="campoObrigatorio">*</span> CEP</Label>
-                        <Input type="text" name="cep" id="exampleCEP" />
+                        <Input type="text" name="cep" id="exampleCEP" placeholder="Insira CEP" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleCidade"><span className="campoObrigatorio">*</span> Cidade</Label>
-                        <Input type="text" name="cidade" id="exampleCidade" />
+                        <Input type="text" name="cidade" id="exampleCidade" placeholder="Insira o nome da cidade" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleRua"><span className="campoObrigatorio">*</span> Rua</Label>
-                        <Input type="text" name="rua" id="exampleRua" />
+                        <Input type="text" name="rua" id="exampleRua" placeholder="Insira o nome da rua" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleBairro"><span className="campoObrigatorio">*</span> Bairro</Label>
-                        <Input type="text" name="bairro" id="exampleBairro" />
+                        <Input type="text" name="bairro" id="exampleBairro" placeholder="Insira o nome do bairro" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleNumero"><span className="campoObrigatorio">*</span> Número</Label>
-                        <Input type="text" name="numero" id="exampleNumero" />
+                        <Input type="text" name="numero" id="exampleNumero" placeholder="Insira o número da casa" />
                     </FormGroup>
 
                     <FormGroup>
                         <Label for="examplePReferencia">Ponto de Referência</Label>
-                        <Input type="text" name="pontoDEreferencia" id="examplePReferencia" />
+                        <Input type="text" name="pontoDEreferencia" id="examplePReferencia" placeholder="Insira o ponto de referência" />
                     </FormGroup>
                 </Form>
 
@@ -258,8 +264,12 @@ function CadastroPrestador (){
                         <button className="btAnt" onClick={antForm}>Voltar</button>
                     </Col>
 
-                    <Col>
+                    <Col id="btContinuar">
                         <button className="btProx" onClick={proxForm} >Continuar</button>
+                    </Col>
+
+                    <Col id="btConcluirCadastro" style={{display: "none"}}>
+                        <button className="btConcluir" >Realizar Cadastro</button>
                     </Col>
                 </Row>
 
@@ -271,6 +281,8 @@ function CadastroPrestador (){
 
             <section className="layoutAzul">
                 <p style={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", marginTop: "165px", fontSize: "36px"}}>Reinvente-se!<br /><span>Seja <span style={{fontWeight: "bold"}}>Torxs Services</span></span></p>
+            
+                <p style={{color: 'white', display: "flex", flexDirection: "column", alignItems: "center", fontSize: "24px", marginTop: "50%"}}>Cada necessidade uma solução.</p>
             </section>
         </div>
 
