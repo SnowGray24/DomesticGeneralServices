@@ -12,24 +12,17 @@ function CadastroPrestador (){
     const [fieldForm, setFieldForm] = useState(1);
 
     const antForm = () =>{
-        if (fieldForm === 4){
-            document.getElementById("formField1").style.display = "none";
-            document.getElementById("formField2").style.display = "none";
-            document.getElementById("formField3").style.display = "block";
-            document.getElementById("formField4").style.display = "none";
-
-            document.getElementById("btConcluirCadastro").style.display = "none";
-            document.getElementById("btContinuar").style.display = "block";
-        }else if (fieldForm === 3){
+        if (fieldForm === 3){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "block";
             document.getElementById("formField3").style.display = "none";
-            document.getElementById("formField4").style.display = "none";
+
+            document.getElementById("btConcluirCadastro").style.display = "none";
+            document.getElementById("btContinuar").style.display = "block";
         }else if (fieldForm === 2){
             document.getElementById("formField1").style.display = "block";
             document.getElementById("formField2").style.display = "none";
             document.getElementById("formField3").style.display = "none";
-            document.getElementById("formField4").style.display = "none";
             
 
             
@@ -51,23 +44,16 @@ function CadastroPrestador (){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "block";
             document.getElementById("formField3").style.display = "none";
-            document.getElementById("formField4").style.display = "none";
         }else if (fieldForm === 2){
             document.getElementById("formField1").style.display = "none";
             document.getElementById("formField2").style.display = "none";
             document.getElementById("formField3").style.display = "block";
-            document.getElementById("formField4").style.display = "none";
-        }else if (fieldForm === 3){
-            document.getElementById("formField1").style.display = "none";
-            document.getElementById("formField2").style.display = "none";
-            document.getElementById("formField3").style.display = "none";
-            document.getElementById("formField4").style.display = "block";
 
             document.getElementById("btConcluirCadastro").style.display = "block";
             document.getElementById("btContinuar").style.display = "none";
         }
 
-        if (fieldForm < 4)
+        if (fieldForm < 3)
             setFieldForm(fieldForm + 1);
         
         console.log(fieldForm);
@@ -88,8 +74,7 @@ function CadastroPrestador (){
                     <Row>
                         <BarProgress numero={1} opcao="Dados Pessoais" status={fieldForm} />
                         <BarProgress numero={2} opcao="Endereço" status={fieldForm} />
-                        <BarProgress numero={3} opcao="Serviços" status={fieldForm} />
-                        <BarProgress numero={4} opcao="Dados do Login" status={fieldForm} />
+                        <BarProgress numero={3} opcao="Dados do Login" status={fieldForm} />
                     </Row>
                 </nav>
 
@@ -98,7 +83,7 @@ function CadastroPrestador (){
 
                     <FormGroup>
                         <Label for="exampleNome"><span className="campoObrigatorio">*</span> Nome</Label>
-                        <Input type="nome" name="nome" id="exampleNome" placeholder="Insira seu nome" />
+                        <Input type="text" name="Nome" id="exampleNome" placeholder="Insira seu nome" />
                     </FormGroup>
 
                     <FormGroup>
@@ -107,31 +92,9 @@ function CadastroPrestador (){
                     </FormGroup>
 
                     <FormGroup>
-                        <Label for="exampleCNPJ">CNPJ</Label>
-                        <Input type="text" name="cnpj" id="exampleCNPJ" placeholder="Insira seu CNPJ" />
+                        <Label for="exampleTelefone"><span className="campoObrigatorio">*</span> Telefone</Label>
+                        <Input type="text" name="telefone" id="exampleTelefone" placeholder="(DDD) 90000-0000" />
                     </FormGroup>
-
-
-                    <Row>
-                        <Col>
-                            <FormGroup>
-                                <Label for="exampleTelefone"><span className="campoObrigatorio">*</span> Telefone</Label>
-                                <Input type="text" name="telefone" id="exampleTelefone" placeholder="(DDD) 90000-0000" />
-                            </FormGroup>
-                        </Col>
-
-                        <Col>
-                            <FormGroup>
-                                <Label for="exampleDate"><span className="campoObrigatorio">*</span> Data de Nascimento</Label>
-                                <Input
-                                type="date"
-                                name="date"
-                                id="exampleDate" />
-                            </FormGroup>
-                        </Col>
-                    </Row>
-
-
 
                     <FormGroup>
                         <Label><span className="campoObrigatorio">*</span> Sexo</Label>
@@ -149,7 +112,7 @@ function CadastroPrestador (){
                 <Form id="formField2" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
                     <FormGroup>
                         <Label><span className="campoObrigatorio">*</span> UF</Label>
-                        <Input type="select" bsSize="sm" placeholder="Selecione a UF">
+                        <Input type="select" bsSize="sm" placeholder="Escolha um gênero">
                             <option>AC</option>
                             <option>AL</option>
                             <option>AP</option>
@@ -184,7 +147,7 @@ function CadastroPrestador (){
 
                     <FormGroup>
                         <Label for="exampleCEP"><span className="campoObrigatorio">*</span> CEP</Label>
-                        <Input type="text" name="cep" id="exampleCEP" placeholder="Insira CEP" />
+                        <Input type="text" name="cep" id="exampleCEP" placeholder="Insira o CEP" />
                     </FormGroup>
 
                     <FormGroup>
@@ -213,35 +176,8 @@ function CadastroPrestador (){
                     </FormGroup>
                 </Form>
 
-                <Form Form id="formField3" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
 
-                    <div><Label><span className="campoObrigatorio">*</span> Categorias</Label></div>
-                    <FormGroup check inline>
-                        <Label check>
-                        <Input type="checkbox" /> Limpeza
-                        </Label>
-                    </FormGroup>
-
-                    <FormGroup check inline>
-                        <Label check>
-                        <Input type="checkbox" /> Mecânica
-                        </Label>
-                    </FormGroup>
-
-
-
-
-
-                    <FormGroup>
-                        <Label for="exampleDescricao"><span className="campoObrigatorio">*</span> Descrição</Label>
-                        <Input type="textarea" name="descricao" id="exampleDescricao" />
-                    </FormGroup>
-
-                </Form>
-
-
-
-                <Form id="formField4" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
+                <Form id="formField3" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
                     <FormGroup>
                         <Label for="exampleEmail" hidden><span className="campoObrigatorio">*</span> Email</Label>
                         <Input type="email" name="email" id="exampleEmail" placeholder="Insira seu email" />

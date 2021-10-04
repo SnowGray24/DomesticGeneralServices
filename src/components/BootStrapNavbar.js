@@ -41,7 +41,7 @@ const BootStrapNavbar = (props) => {
             </NavItem>
 
             <NavItem className="buttonNavbar">
-              <NavLink href="/sobre/"><span>Contratante de Serviços</span></NavLink>
+              <NavLink href="/CadastroContratante"><span>Contratante de Serviços</span></NavLink>
             </NavItem>
 
             <NavItem className="buttonNavbar">
