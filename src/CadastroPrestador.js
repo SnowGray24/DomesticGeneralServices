@@ -107,8 +107,8 @@ function CadastroPrestador (){
 
                 <Form id="formField2" style={{marginTop: "37px", display: "none"}} className="formConfigCadastroPrestador">
                     <FormGroup>
-                        <Label><span className="campoObrigatorio">*</span> UF</Label>
-                        <Input type="select" bsSize="sm" placeholder="Escolha um gênero">
+                        <Label for="exampleUF"><span className="campoObrigatorio">*</span> UF</Label>
+                        <Input type="select" name="selectuf" placeholder="Escolha um gênero">
                             <option>AC</option>
                             <option>AL</option>
                             <option>AP</option>
@@ -174,7 +174,7 @@ function CadastroPrestador (){
 
 
                 <div style={{marginTop: "30px"}}>
-                    <button className="btCancelar">Cancelar</button>
+                    <button className="btCancelar" onClick="/">Cancelar</button>
                     <button className="btProx" onClick={proxForm} >Continuar</button>
                 </div>
 
