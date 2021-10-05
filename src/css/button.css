@@ -67,3 +67,17 @@
     border-radius: 2px;
     background-color: #FFFFFF;
 }
+
+.btAzul{
+    border: 1px solid #323D87;
+    color: #FFFFFF;
+    width: 353px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #323D87;
+}
+
+.btZerado{
+    border: none;
+    background-color: transparent;
+}

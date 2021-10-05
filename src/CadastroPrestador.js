@@ -230,8 +230,6 @@ function CadastroPrestador (){
 
 
 
-
-
                     <FormGroup>
                         <Label for="exampleDescricao"><span className="campoObrigatorio">*</span> Descrição</Label>
                         <Input type="textarea" name="descricao" id="exampleDescricao" />
