@@ -4,11 +4,23 @@ import "./css/button.css";
 import logo from './img/logo2.PNG';
 import iconeCadeado from './img/icones/cadeado.png';
 import iconeEmail from './img/icones/email.png';
+import iconeOlho from './img/icones/view.PNG';
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Col, Row, Form, FormGroup, Label, Input } from 'reactstrap';
 
 function Login (){
+
+    const [typeInput, setTypeInput] = useState('password')
+
+    const viewPassword = () =>{
+        if (typeInput == 'password'){
+            setTypeInput('text');
+        }else{
+            setTypeInput('password');
+        }
+        
+    } 
 
     return (
         <div style={{display: "flex"}}>
@@ -43,7 +55,14 @@ function Login (){
                             </span>
                         </div>
 
-                        <Input className="bordarInputLogin" type="password" placeholder="Senha" />
+                        <Input id="loginPassword" className="bordarInputSenha" type={typeInput} placeholder="Senha" />
+
+                        <div className="bordarButtonEye" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                            <span style={{width: '36px'}}>
+                                <button onClick={viewPassword} className='btZerado' type='button'><img height='18px' src={iconeOlho} alt="" /></button>
+                            </span>
+                        </div>
+
                     </FormGroup>
 
                     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'end'}}>  

@@ -102,3 +102,19 @@
     border-left: none;
     border-radius: 0px 2px 2px 0px;
 }
+
+
+.bordarInputSenha{
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.bordarButtonEye{
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: none;
+    border-right: 1px solid #D9D9D9;
+}
