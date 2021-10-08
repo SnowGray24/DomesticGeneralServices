@@ -7,14 +7,14 @@ import iconeEmail from './img/icones/email.png';
 import iconeOlho from './img/icones/view.PNG';
 
 import React, {useState} from 'react';
-import { Col, Row, Form, FormGroup, Label, Input } from 'reactstrap';
+import {Form, FormGroup, Label, Input } from 'reactstrap';
 
 function Login (){
 
     const [typeInput, setTypeInput] = useState('password')
 
     const viewPassword = () =>{
-        if (typeInput == 'password'){
+        if (typeInput === 'password'){
             setTypeInput('text');
         }else{
             setTypeInput('password');
@@ -74,7 +74,7 @@ function Login (){
                     </FormGroup>
                 </Form>
 
-                <p style={{marginTop: "21px", color: 'rgba(0, 0, 0, 0.65)'}}>Não tem uma conta? <a style={{color: 'rgba(50, 61, 135, 1)'}}>Cadastra-se</a></p>
+                <p style={{marginTop: "21px", color: 'rgba(0, 0, 0, 0.65)'}}>Não tem uma conta? <a href="/" style={{color: 'rgba(50, 61, 135, 1)'}}>Cadastra-se</a></p>
             
             </section>
         </div>
