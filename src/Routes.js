@@ -14,7 +14,7 @@ const Routes = () => {
            <Route component = { CadastroPrestador } path="/CadastroPrestador" />
            <Route component = { CadastroContratante } path="/CadastroContratante"  />
            <Route component = { Login } path="/Login" />
-           <Route component = { HomePagePrestador } path="/HomePagePrestador" />
+           <Route component = { HomePagePrestador } path="/MeusServicos" />
        </BrowserRouter>
    )
 }

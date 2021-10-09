@@ -5,7 +5,7 @@ import '../css/homePages.css';
 
 import imgTask from '../img/icones/task.PNG';
 
-function NavHomePagePrestador(){
+function MeusServicos(){
 
     return (
         <div>
@@ -37,4 +37,4 @@ function NavHomePagePrestador(){
     );
 }
 
-export default NavHomePagePrestador;
+export default MeusServicos;
