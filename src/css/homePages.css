@@ -1,0 +1,50 @@
+.barOptionsMeusServicos{
+    padding-left: 1em;
+    padding-right: 1em;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    height: 46px;
+    width: 100%;
+}
+
+.barOptionsMeusServicos ul{
+    margin-top: 8px;
+    padding-right: 15px;
+}
+
+.optionItemSelect{
+    color: #1351B4;
+    padding-bottom: 11px;
+    margin-top: 0px;
+    border-bottom: 2px solid #1351B4;
+}
+
+.bolaPerfilUsuario{
+    color: white;
+    background-color: #323D87;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+.navBarItemSelect{
+    background-color: #E6F7FF;
+    padding: 3px;
+    color: #323D87;
+    border-radius: 3px;
+    font-weight: 500;
+}
+.navBarItem{
+    height: 35px;
+    padding-left: 16px;
+}
