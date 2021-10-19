@@ -81,3 +81,30 @@
     border: none;
     background-color: transparent;
 }
+
+.btExcluirServicos{
+    border: 1px solid #FF4842;
+    color: #FF4842;
+    width: 79px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.btAceitarServicos{
+    border: 1px solid #229A16;
+    color: white;
+    width: 79px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #229A16; 
+}
+
+.btFinalizarServicos{
+    border: 1px solid #323D87;
+    color: white;
+    width: 91px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #323D87;
+}
