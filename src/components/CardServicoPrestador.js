@@ -5,6 +5,7 @@ import '../css/homePages.css';
 function CardServicoPrestador () {
 
     const [services, setServices] = useState([...myServices]);
+    const [finishedServices, setFinishedServices] = useState([]);
 
     function ExcluirServico(idItem) {
         /*rascunho para edição de um novo
@@ -26,6 +27,27 @@ function CardServicoPrestador () {
         cardContainer.style.display="none"
     }
 
+    function FinalizarServico(idItem) {
+        
+        /* Retirando do Array de serviços em andamento*/
+        let newArrayServices = services
+
+        var indexFinalizado = newArrayServices.indexOf(idItem)
+        
+        let ServicoMarcadoComoFinalizado = newArrayServices.splice(indexFinalizado-1, 1)
+        setServices(newArrayServices)
+        
+      
+        let cardContainer2 = document.getElementsByClassName("containerCard")[idItem]
+        cardContainer2.style.display="none"
+
+        /* Inserindo no Array de serviços finalizados*/
+        let newArrayFinalizados = finishedServices
+
+        newArrayFinalizados.push(...ServicoMarcadoComoFinalizado)
+        setFinishedServices(newArrayFinalizados)
+    }
+    
     return (
         <div className="ContainerSolicitacoes">
             {myServices.map((item, index)=>(
@@ -41,7 +63,7 @@ function CardServicoPrestador () {
                     <p style={{marginBottom: '25px', fontSize: '16px'}}>{item.prediction}</p>
                     {item.isFinished
                      ? <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <button className="btFinalizarServicos">Finalizar</button>
+                        <button className="btFinalizarServicos" onClick={()=>{FinalizarServico(item.id)}}>Finalizar</button>
                         </div>
                      : <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <button className="btExcluirServicos" style={{marginRight: '20px'}} onClick={()=>{ExcluirServico(item.id)}}>Excluir</button>
