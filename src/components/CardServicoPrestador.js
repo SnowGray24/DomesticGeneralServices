@@ -4,7 +4,7 @@ import myServices from "../data/CardsPrestador";
 function CardServicoPrestador () {
 
     const [services, setServices] = useState([...myServices]);
-    
+
     function ExcluirServico(idItem) {
         /*rascunho para edição de um novo
          let obj = [{
@@ -16,14 +16,11 @@ function CardServicoPrestador () {
         */
 
         let newArray = services
-        console.log("services: "+ services.length)
-        console.log("newArray "+ newArray.length)
 
-        if(newArray.length >= 1){
-            newArray.splice(idItem, 1)
-            setServices(newArray)
-        }
-        
+        var index = newArray.indexOf(idItem)
+        newArray.splice(index, 1)
+        setServices(newArray)
+
         let cardContainer = document.getElementsByClassName("containerCard")[idItem]
         cardContainer.style.display="none"
     }
