@@ -1,5 +1,6 @@
 import { useState } from "react";
 import myServices from "../data/CardsPrestador";
+import '../css/homePages.css';
 
 function CardServicoPrestador () {
 
@@ -26,7 +27,7 @@ function CardServicoPrestador () {
     }
 
     return (
-        <div>
+        <div className="ContainerSolicitacoes">
             {myServices.map((item, index)=>(
                 <div id={item.id} key={index} className="containerCard" style={{marginLeft: '10px', borderRadius: '2px', width: '300px', boxShadow: '0px 3px 9px rgba(0,0,0,0.2)', padding: '33px', marginBottom: '10px'}}>
                     <div style={{display:"flex", alignItems: 'center', justifyContent: 'flex-start', marginBottom:'10px'}}>
@@ -37,7 +38,7 @@ function CardServicoPrestador () {
                             <h2 style={{color: 'rgba(0,0,0,0.85)', fontSize: '16px',marginBottom:'0px'}}>{item.title}</h2>
                         </div>
                     </div>
-                    <p>{item.prediction}</p>
+                    <p style={{marginBottom: '25px', fontSize: '16px'}}>{item.prediction}</p>
                     {item.isFinished
                      ? <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <button className="btFinalizarServicos">Finalizar</button>

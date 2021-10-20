@@ -46,7 +46,7 @@ function MeusServicos(){
                     </div>
                 </nav>
 
-                <div style={{height: 'calc(100vh - 156px)', width: '100%'}} className='itemCentralizar'>
+                <div style={{height: 'calc(100vh - 156px)', width: '100%'}}>
                     {card}
                 </div>
             </div>
