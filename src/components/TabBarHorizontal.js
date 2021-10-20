@@ -39,7 +39,18 @@ function TabBarHorizontal(props) {
                     </div>
                 }
             </nav>
+            {inProgressChecked
+            ? <>
+              {props.card}
+              </>
+            : <>
+              <h1>Nada aqui ainda</h1>
+              </>
+            }
         </div>
+            
+            
+            
     )
 }
 export default TabBarHorizontal
