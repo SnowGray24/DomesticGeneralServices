@@ -6,18 +6,24 @@ function CardServicoPrestador () {
 
     const [services, setServices] = useState([...myServices]);
     const [finishedServices, setFinishedServices] = useState([]);
+    const [exibe, setExibe] = useState(true)
 
     function ExcluirServico(idItem) {
 
         let newArray = services
-
-        var index = newArray.indexOf(idItem)
-        newArray.splice(index, 1)
+        
+        newArray.splice(idItem, 1)
+        
         setServices(newArray)
+        
+        let cardContainer = document.getElementsByClassName("containerCard")[idItem].remove()
+        
+       // let cardContainer = document.getElementsByClassName("containerSolicitacoes").remove()
+        
 
-        let cardContainer = document.getElementsByClassName("containerCard")[idItem]
-        cardContainer.style.display="none"
+        //cardContainer.parentNode.removeChild(cardContainer)
     }
+
 
     function FinalizarServico(idItem) {
         
@@ -42,7 +48,7 @@ function CardServicoPrestador () {
     
     return (
         <div className="ContainerSolicitacoes">
-            {myServices.map((item, index)=>(
+            {services.map((item, index)=>(
                 <div id={item.id} key={index} className="containerCard" style={{marginLeft: '10px', borderRadius: '2px', width: '300px', boxShadow: '0px 3px 9px rgba(0,0,0,0.2)', padding: '33px', marginBottom: '10px'}}>
                     <div style={{display:"flex", alignItems: 'center', justifyContent: 'flex-start', marginBottom:'10px'}}>
                         <div>
