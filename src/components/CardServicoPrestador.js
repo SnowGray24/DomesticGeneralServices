@@ -17,11 +17,6 @@ function CardServicoPrestador () {
         setServices(newArray)
         
         let cardContainer = document.getElementsByClassName("containerCard")[idItem].remove()
-        
-       // let cardContainer = document.getElementsByClassName("containerSolicitacoes").remove()
-        
-
-        //cardContainer.parentNode.removeChild(cardContainer)
     }
 
 
