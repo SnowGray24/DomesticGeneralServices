@@ -40,11 +40,11 @@ function CardServicoPrestador () {
                     <p>{item.prediction}</p>
                     {item.isFinished
                      ? <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <button className="btConcluir" style={{width:'91px', display: 'flex', alignItems:'center', justifyContent: 'center'}}>Finalizar</button>
+                        <button className="btFinalizarServicos" style={{width:'91px', display: 'flex', alignItems:'center', justifyContent: 'center'}}>Finalizar</button>
                         </div>
-                     : <div style={{display: 'flex'}}>
-                        <button className="btCancelar" style={{marginRight: '20px'}} onClick={()=>{ExcluirServico(item.id)}}>Excluir</button>
-                        <button className="btProx" style={{background: 'green', border: 'none'}}>Aceitar</button>
+                     : <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                        <button className="btExcluirServicos" style={{marginRight: '20px'}} onClick={()=>{ExcluirServico(item.id)}}>Excluir</button>
+                        <button className="btAceitarServicos" style={{background: 'green', border: 'none'}}>Aceitar</button>
                        </div>
                     }
 
