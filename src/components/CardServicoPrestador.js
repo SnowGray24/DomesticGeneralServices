@@ -8,14 +8,6 @@ function CardServicoPrestador () {
     const [finishedServices, setFinishedServices] = useState([]);
 
     function ExcluirServico(idItem) {
-        /*rascunho para edição de um novo
-         let obj = [{
-            title: "nada",
-            prediction: "10 dias",
-            isFinished: false,
-            image: null
-        }]
-        */
 
         let newArray = services
 
