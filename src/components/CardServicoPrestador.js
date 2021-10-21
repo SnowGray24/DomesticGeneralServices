@@ -16,7 +16,8 @@ function CardServicoPrestador () {
         
         setServices(newArray)
         
-        let cardContainer = document.getElementsByClassName("containerCard")[idItem].remove()
+        let cardContainer = document.getElementsByClassName("containerCard")[idItem]
+        cardContainer.style.display="none"
     }
 
 
@@ -31,8 +32,8 @@ function CardServicoPrestador () {
         setServices(newArrayServices)
         
       
-        let cardContainer2 = document.getElementsByClassName("containerCard")[idItem]
-        cardContainer2.style.display="none"
+        let cardContainer = document.getElementsByClassName("containerCard")[idItem]
+        cardContainer.style.display="none"
 
         /* Inserindo no Array de serviços finalizados*/
         let newArrayFinalizados = finishedServices
