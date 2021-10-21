@@ -6,7 +6,6 @@ function CardServicoPrestador () {
 
     const [services, setServices] = useState([...myServices]);
     const [finishedServices, setFinishedServices] = useState([]);
-    const [exibe, setExibe] = useState(true)
 
     function ExcluirServico(idItem) {
 
