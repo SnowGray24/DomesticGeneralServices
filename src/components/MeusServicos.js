@@ -6,6 +6,8 @@ import React, { useState } from 'react';
 import CardServicoPrestador from './CardServicoPrestador';
 import myServices from '../data/CardsPrestador';
 import TabBarHorizontal from './TabBarHorizontal';
+import CardCategorias from './CardCategorias';
+
 
 function MeusServicos(){
 
@@ -35,6 +37,7 @@ function MeusServicos(){
 
             { /* Options */ }
             <TabBarHorizontal card={card} inProgressChecked={true} finishedChecked={false} />
+            <CardCategorias/>
         </div>
     );
 }

@@ -1,0 +1,18 @@
+.categoryCard{
+    box-sizing: border-box;
+    
+    margin-left: 10px;
+    width: 140px;
+    padding: 10px 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.2);
+}
+.categoryCard .titleCard{
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.85);
+}
