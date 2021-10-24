@@ -24,11 +24,11 @@ function HomePagePrestador(){
     }
 
     return (
-        <div>
+        <div className='page'>
 
             <main style={{height: '100vh', display: 'flex'}}>
             
-                <section style={{width: '220px', borderRight: '1px solid #EBEBEB', color: 'rgba(0, 0, 0, 0.65)'}}>
+                <section style={{width: '200px', minWidth: '220px', borderRight: '1px solid #EBEBEB', color: 'rgba(0, 0, 0, 0.65)', minHeight: '100vh', scrollbarWidth: 'none'}}>
                     <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10px'}}>
                         <img src={logoMarca} alt="" height='46' />
                     </div>
@@ -72,7 +72,7 @@ function HomePagePrestador(){
                     </nav>
 
                     
-                    <div className="itemCentralizar" style={{borderTop: '1px solid #EBEBEB', height: '52px'}}>
+                    <div className="itemCentralizar versao" style={{borderTop: '1px solid #EBEBEB', height: '52px'}}>
                         Versão 1.0
                     </div>
                 </section>

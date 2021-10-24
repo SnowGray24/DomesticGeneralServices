@@ -52,7 +52,7 @@ function CardServicoPrestador () {
     }
     
     return (
-        <div className="ContainerSolicitacoes">
+        <div className="ContainerSolicitacoes" style={{display: 'grid', gridTemplateColumns: '300px 300px 300px', gridGap: '20px'}}>
             {
             services.map((item, index)=>(
                 <div id={item.id} key={index} className="containerCard" style={{marginLeft: '10px', borderRadius: '2px', width: '300px', boxShadow: '0px 3px 9px rgba(0,0,0,0.2)', padding: '33px', marginBottom: '10px'}}>

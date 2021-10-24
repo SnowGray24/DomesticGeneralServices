@@ -29,6 +29,48 @@ const myServices = [
         prediction: "Previsão de término em 1 dia.",
         isFinished: false,
         image: notFinished
+    },
+        {
+        id: 2,
+        title: "Serviço de Montagem",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
+    },
+    {
+        id: 3,
+        title: "Serviço de Montagem22",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
+    },
+        {
+        id: 2,
+        title: "Serviço de Montagem",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
+    },
+    {
+        id: 3,
+        title: "Serviço de Montagem22",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
+    },
+        {
+        id: 2,
+        title: "Serviço de Montagem",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
+    },
+    {
+        id: 3,
+        title: "Serviço de Montagem22",
+        prediction: "Previsão de término em 1 dia.",
+        isFinished: false,
+        image: notFinished
     }
 ]
 
