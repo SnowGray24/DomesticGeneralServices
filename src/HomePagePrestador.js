@@ -47,7 +47,7 @@ function HomePagePrestador(){
             <main style={{display: 'flex'}}>
                 <MenuVertical options={Options}/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
-                    <Header/>
+                    <Header letraPerfil="M" nome="Maria"/>
                     { mostrarTela() }
                 </section>
 

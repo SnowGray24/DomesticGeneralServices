@@ -1,14 +1,14 @@
 import '../css/header.css'
 
-function Header (){
+function Header ({letraPerfil, nome}){
     return (
         <header className="header">
             <div className="identificador-perfil">
                 <div className="bolaPerfilUsuario">
-                    M
+                    {letraPerfil}
                 </div>
                 <div>
-                    Maria
+                    {nome}
                 </div>
             </div>
         </header>

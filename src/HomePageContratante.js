@@ -4,6 +4,7 @@ import todosServicos from './img/icones/todos-servicos.png';
 import perfil from './img/icones/perfil.PNG';
 import ajuda from './img/icones/ajuda.PNG';
 import sair from './img/icones/sair.PNG';
+import Header from './components/Header';
 
 function HomePageContratante () {
 
@@ -34,9 +35,12 @@ function HomePageContratante () {
             selected: false
         },        
     ]
-    
+
     return (
-       <MenuVertical options={Options}/>
+        <>
+            <MenuVertical options={Options}/>
+            <Header letraPerfil="J" nome="João"/>
+       </>
     )
 }
 
