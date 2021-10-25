@@ -3,9 +3,35 @@ import './css/homePages.css';
 import './css/configCSS.css';
 import React, {useState} from 'react';
 import MenuVertical from './components/MenuVertical';
-
+import taskSelected from './img/icones/taskSelect.PNG';
+import perfil from './img/icones/perfil.PNG';
+import ajuda from './img/icones/ajuda.PNG';
+import sair from './img/icones/sair.PNG';
 
 function HomePagePrestador(){
+
+    const Options =[
+        {
+            opcao: 'Meus Serviços',
+            imagem: taskSelected,
+            selected: true
+        },
+        {
+            opcao: 'Meu Perfil',
+            imagem: perfil,
+            selected: false
+        },
+        {
+            opcao: 'Ajuda',
+            imagem: ajuda,
+            selected: false
+        },
+        {
+            opcao: 'Sair',
+            imagem: sair,
+            selected: false
+        },        
+    ]
 
     const [telaServicos, setTelaServicos] = useState(0);
 
@@ -20,7 +46,7 @@ function HomePagePrestador(){
 
             <main style={{display: 'flex'}}>
             
-                <MenuVertical options={["Meus Serviços","Meu Perfil","Ajuda","Sair"]}/>
+                <MenuVertical options={Options}/>
 
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                    

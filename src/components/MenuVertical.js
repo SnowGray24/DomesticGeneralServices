@@ -1,12 +1,11 @@
 import logoMarca from '../img/logo.PNG';
-import imgTaskSelect from '../img/icones/taskSelect.PNG';
-import imgPerfil from '../img/icones/perfil.PNG';
-import imgAjuda from '../img/icones/ajuda.PNG';
-import imgSair from '../img/icones/sair.PNG';
-
 import '../css/MenuVertical.css';
 
-function MenuVertical (props) {
+function MenuVertical ({options, selected}) {
+    
+    /* variável usada no ternário contido na ul, que define qual será a classe atribuída a ul */
+    let className = " "
+
     return (
         <section className="Menu-vertical-container">
             <div className="Logomarca">
@@ -14,41 +13,16 @@ function MenuVertical (props) {
             </div>
 
             <nav className="Nav-Menu">
-                <ul className="resetUlLi navBarItem navBarItemSelect">
+            {options.map((item,index)=>(
+                <ul key={index} className={item.selected === true ? className="resetUlLi navBarItem navBarItemSelect" : className="resetUlLi navBarItem"}>
                     <li style={{display: 'flex'}}>
                         <div style={{height:'20px', width: '30px'}}>
-                            <img style={{height: '100%'}} src={imgTaskSelect} alt="" />
+                            <img style={{height: '100%'}} src={item.imagem} alt={item.opcao} />
                         </div>
-                        {props.options[0]}
+                    {item.opcao}
                     </li>
                 </ul>
-
-                <ul className="resetUlLi navBarItem">
-                    <li style={{display: 'flex'}}>
-                        <div style={{height:'20px', width: '30px'}}>
-                            <img style={{height: '100%'}} src={imgPerfil} alt={props.options[1]} />
-                        </div>
-                        {props.options[1]}
-                    </li>
-                </ul>
-
-                <ul className="resetUlLi navBarItem">
-                    <li style={{display: 'flex'}}>
-                        <div style={{height:'20px', width: '30px'}}>
-                            <img style={{height: '100%'}} src={imgAjuda} alt={props.options[2]} />
-                        </div>
-                        {props.options[2]}
-                    </li>
-                </ul>
-
-                <ul className="resetUlLi navBarItem">
-                    <li style={{display: 'flex'}}>
-                        <div style={{height:'20px', width: '30px'}}>
-                            <img style={{height: '100%'}} src={imgSair} alt={props.options[3]} />
-                        </div>
-                        {props.options[3]}
-                    </li>
-                </ul>
+            ))}
             </nav>
 
             <div className="itemCentralizar versao">
