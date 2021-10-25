@@ -7,6 +7,7 @@ import taskSelected from './img/icones/taskSelect.PNG';
 import perfil from './img/icones/perfil.PNG';
 import ajuda from './img/icones/ajuda.PNG';
 import sair from './img/icones/sair.PNG';
+import Header from './components/Header';
 
 function HomePagePrestador(){
 
@@ -43,24 +44,10 @@ function HomePagePrestador(){
 
     return (
         <div className='page'>
-
             <main style={{display: 'flex'}}>
-            
                 <MenuVertical options={Options}/>
-
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
-                   
-                    <div style={{borderBottom:'1px solid #EBEBEB' ,height: '50px', paddingRight: '45px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'end'}}>
-                        <div style={{display: 'flex'}}>
-                            <div className="bolaPerfilUsuario">
-                                M
-                            </div>
-                            <div style={{marginLeft: '8px'}}>
-                                Maria
-                            </div>
-                        </div>
-                    </div>
-
+                    <Header/>
                     { mostrarTela() }
                 </section>
 
