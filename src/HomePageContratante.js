@@ -5,6 +5,7 @@ import perfil from './img/icones/perfil.PNG';
 import ajuda from './img/icones/ajuda.PNG';
 import sair from './img/icones/sair.PNG';
 import Header from './components/Header';
+import CardCategorias from './components/CardCategorias';
 
 function HomePageContratante () {
 
@@ -40,6 +41,7 @@ function HomePageContratante () {
         <>
             <MenuVertical options={Options}/>
             <Header letraPerfil="J" nome="João"/>
+            <CardCategorias/>
        </>
     )
 }
