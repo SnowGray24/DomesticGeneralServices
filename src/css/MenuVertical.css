@@ -1,0 +1,28 @@
+.Menu-vertical-container{
+    width: 200px;
+    min-width: 220px;
+    border-right: 1px solid #EBEBEB;
+    color: rgba(0, 0, 0, 0.65);
+    min-height: 100vh;
+}
+
+.Logomarca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Nav-Menu{
+     padding: 10px;
+     height: 80%;
+}
+
+.versao {
+    border-top: 1px solid #EBEBEB;
+    height: 52px;
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
