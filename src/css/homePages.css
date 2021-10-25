@@ -25,16 +25,7 @@
     border-bottom: 2px solid #1351B4;
 }
 
-.bolaPerfilUsuario{
-    color: white;
-    background-color: #323D87;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 
@@ -58,11 +49,4 @@
     display: flex;
     align-items: flex-start;
     margin-left: 16px;
-}
-
-.versao {
-    width: inherit;
-    position: fixed;
-    bottom: 0;
-    left:0;
 }

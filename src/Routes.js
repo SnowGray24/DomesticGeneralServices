@@ -6,6 +6,7 @@ import CadastroPrestador from "./CadastroPrestador";
 import CadastroContratante from "./CadastroContratante";
 import Login from "./Login";
 import HomePagePrestador from "./HomePagePrestador";
+import HomePageContratante from "./HomePageContratante";
 
 const Routes = () => {
    return(
@@ -15,6 +16,7 @@ const Routes = () => {
            <Route component = { CadastroContratante } path="/CadastroContratante"  />
            <Route component = { Login } path="/Login" />
            <Route component = { HomePagePrestador } path="/MeusServicos" />
+           <Route component = { HomePageContratante } path="/MeusPedidos" />
        </BrowserRouter>
    )
 }

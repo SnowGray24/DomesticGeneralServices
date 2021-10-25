@@ -2,7 +2,7 @@ import '../css/configCSS.css';
 import '../css/homePages.css';
 import '../css/button.css';
 import imgTask from '../img/icones/task.PNG';
-import React, { useState } from 'react';
+import React from 'react';
 import CardServicoPrestador from './CardServicoPrestador';
 import myServices from '../data/CardsPrestador';
 import TabBarHorizontal from './TabBarHorizontal';

@@ -1,0 +1,32 @@
+.header{
+    border-bottom: 1px solid #EBEBEB;
+    height: 50px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: -webkit-sticky;
+    top: 0;
+
+    
+}
+
+.identificador-perfil{
+    display: flex;
+}
+
+.bolaPerfilUsuario{
+    color: white;
+    background-color: #323D87;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bolaPerfilUsuario + div{
+    margin-left: 8px;
+}
