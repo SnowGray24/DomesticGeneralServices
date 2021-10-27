@@ -8,6 +8,7 @@ import perfil from './img/icones/perfil.PNG';
 import ajuda from './img/icones/ajuda.PNG';
 import sair from './img/icones/sair.PNG';
 import Header from './components/Header';
+import TitleBar from './components/TitleBar';
 
 function HomePagePrestador(){
 
@@ -48,6 +49,7 @@ function HomePagePrestador(){
                 <MenuVertical options={Options}/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="M" nome="Maria"/>
+                    <TitleBar step1="Meus Serviços"/>
                     { mostrarTela() }
                 </section>
 

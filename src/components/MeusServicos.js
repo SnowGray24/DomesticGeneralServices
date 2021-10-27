@@ -26,7 +26,6 @@ function MeusServicos(){
 
     return (
         <div>
-            <TitleBar step1="Meus Serviços"/>
             <TabBarHorizontal card={card} inProgressChecked={true} finishedChecked={false} />
         </div>
     );
