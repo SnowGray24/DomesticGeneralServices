@@ -8,43 +8,21 @@ import Header from './components/Header';
 import TitleBar from './components/TitleBar';
 import CardCategorias from './components/CardCategorias';
 import TabBarHorizontal from './components/TabBarHorizontal';
+import OptionsMenuContratante from './data/OpcoesMenuContratante';
 
 function HomePageContratante () {
 
     let CardCategoria = <CardCategorias/>
 
-    const Options =[
-        {
-            opcao: 'Meus Pedidos',
-            imagem: taskSelected,
-            selected: true
-        },
-        {
-            opcao: 'Todos Serviços',
-            imagem: todosServicos,
-            selected: false
-        },
-        {
-            opcao: 'Meu Perfil',
-            imagem: perfil,
-            selected: false
-        },
-        {
-            opcao: 'Ajuda',
-            imagem: ajuda,
-            selected: false
-        },
-        {
-            opcao: 'Sair',
-            imagem: sair,
-            selected: false
-        },        
-    ]
+    
+    let options = OptionsMenuContratante
+    options[0].selected = true;
+
 
     return (
         <div className='page'>
             <main style={{display: 'flex'}}>
-                <MenuVertical options={Options}/>
+                <MenuVertical options={options}/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="M" nome="Maria"/>
                     <TitleBar step1="Meus Pedidos"/>

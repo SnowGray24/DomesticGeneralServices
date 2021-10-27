@@ -1,7 +1,7 @@
 import logoMarca from '../img/logo.PNG';
 import '../css/MenuVertical.css';
 
-function MenuVertical ({options, selected}) {
+function MenuVertical ({options}) {
 
     return (
         <section className="Menu-vertical-container">

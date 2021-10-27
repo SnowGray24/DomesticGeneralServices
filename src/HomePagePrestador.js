@@ -3,37 +3,15 @@ import './css/homePages.css';
 import './css/configCSS.css';
 import React, {useState} from 'react';
 import MenuVertical from './components/MenuVertical';
-import taskSelected from './img/icones/taskSelect.PNG';
-import perfil from './img/icones/perfil.PNG';
-import ajuda from './img/icones/ajuda.PNG';
-import sair from './img/icones/sair.PNG';
-import Header from './components/Header';
 import TitleBar from './components/TitleBar';
+import Header from './components/Header';
+import OptionsMenuPrestador from './data/OpcoesMenuPrestador';
 
 function HomePagePrestador(){
 
-    const Options =[
-        {
-            opcao: 'Meus Serviços',
-            imagem: taskSelected,
-            selected: true
-        },
-        {
-            opcao: 'Meu Perfil',
-            imagem: perfil,
-            selected: false
-        },
-        {
-            opcao: 'Ajuda',
-            imagem: ajuda,
-            selected: false
-        },
-        {
-            opcao: 'Sair',
-            imagem: sair,
-            selected: false
-        },        
-    ]
+
+    let options = OptionsMenuPrestador;
+    options[0].selected = true;
 
     const [telaServicos, setTelaServicos] = useState(0);
 
@@ -46,7 +24,7 @@ function HomePagePrestador(){
     return (
         <div className='page'>
             <main style={{display: 'flex'}}>
-                <MenuVertical options={Options}/>
+                <MenuVertical options={options}/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="M" nome="Maria"/>
                     <TitleBar step1="Meus Serviços"/>
