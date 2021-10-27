@@ -1,11 +1,11 @@
 import '../css/configCSS.css';
 import '../css/homePages.css';
 import '../css/button.css';
-import imgTask from '../img/icones/task.PNG';
 import React from 'react';
 import CardServicoPrestador from './CardServicoPrestador';
 import myServices from '../data/CardsPrestador';
 import TabBarHorizontal from './TabBarHorizontal';
+import TitleBar from './TitleBar';
 
 
 function MeusServicos(){
@@ -26,15 +26,6 @@ function MeusServicos(){
 
     return (
         <div>
-            { /* Title-bar */ }
-            <div style={{marginLeft: '30px',height: '60px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                <div>
-                    <img height="20" src={imgTask} alt="" /> {'>'} Meus Serviços
-                </div>
-            </div>
-
-
-            { /* Options */ }
             <TabBarHorizontal card={card} inProgressChecked={true} finishedChecked={false} />
         </div>
     );
