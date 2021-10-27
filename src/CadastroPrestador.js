@@ -271,7 +271,7 @@ function CadastroPrestador (){
                     </Col>
                 </Row>
 
-                <p style={{marginTop: "14px"}}>Já tem uma conta? <a href="/" style={{textDecoration: "none"}} className="facaLogin">Faça login.</a></p>
+                <p style={{marginTop: "14px"}}>Já tem uma conta? <a href="/Login" style={{textDecoration: "none"}} className="facaLogin">Faça login.</a></p>
 
 
 
