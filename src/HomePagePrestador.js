@@ -24,7 +24,7 @@ function HomePagePrestador(){
     return (
         <div className='page'>
             <main style={{display: 'flex'}}>
-                <MenuVertical options={options}/>
+                <MenuVertical options={options} selected="Meus Serviços"/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="M" nome="Maria"/>
                     <TitleBar step1="Meus Serviços"/>

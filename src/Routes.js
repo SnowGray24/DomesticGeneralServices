@@ -17,7 +17,7 @@ const Routes = () => {
            <Route component = { CadastroPrestador } path="/CadastroPrestador" />
            <Route component = { CadastroContratante } path="/CadastroContratante"  />
            <Route component = { Login } path="/Login" />
-           <Route component = { HomePagePrestador } path="/MeusServicos" />
+           <Route component = { HomePagePrestador } path="/Meus Serviços" />
            <Route component = { HomePageContratante } path="/Meus Pedidos" />
            <Route component = { TodosServicos } path="/Todos Serviços" />
            <Route component = { PageTestes } path="/Teste" />
