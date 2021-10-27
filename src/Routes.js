@@ -7,6 +7,7 @@ import CadastroContratante from "./CadastroContratante";
 import Login from "./Login";
 import HomePagePrestador from "./HomePagePrestador";
 import HomePageContratante from "./HomePageContratante";
+import TodosServicos from './TodosServicos';
 import PageTestes from "./Testes";
 
 const Routes = () => {
@@ -17,7 +18,8 @@ const Routes = () => {
            <Route component = { CadastroContratante } path="/CadastroContratante"  />
            <Route component = { Login } path="/Login" />
            <Route component = { HomePagePrestador } path="/MeusServicos" />
-           <Route component = { HomePageContratante } path="/MeusPedidos" />
+           <Route component = { HomePageContratante } path="/Meus Pedidos" />
+           <Route component = { TodosServicos } path="/Todos Serviços" />
            <Route component = { PageTestes } path="/Teste" />
 
        </BrowserRouter>
