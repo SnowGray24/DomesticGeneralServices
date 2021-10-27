@@ -17,12 +17,18 @@
      padding: 10px;
      height: 80%;
 }
+
 .Nav-Menu ul{
-margin-bottom: 5px;    
+    margin-bottom: 5px;    
 }
+
+.Nav-Menu ul:first-child{
+    margin-bottom: 5px;  
+    margin-top: 11px;  
+}
+
 .Nav-Menu ul li{
     cursor: pointer;
-    
 }
 
 .versao {
