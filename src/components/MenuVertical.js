@@ -23,7 +23,7 @@ function MenuVertical ({options, selected}) {
                     <ul  className={selected === item.opcao ? sselected : noSelected}>
                         <li style={{display: 'flex'}}>
                             <div style={{height:'20px', width: '30px'}}>
-                                <img style={{height: '100%'}} src={item.imagem} alt={item.opcao} />
+                                <img style={{height: '100%'}} src={selected === item.opcao ? item.imagemSelected : item.imagemNoSelected} alt={item.opcao} />
                             </div>
                         {item.opcao}
                         </li>
