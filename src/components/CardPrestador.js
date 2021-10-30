@@ -1,5 +1,5 @@
 import React from 'react';
-import ServicosMecanicos from "../data/ServicosMecanicos";
+import ServicosMecanicos from "../data/AnunciosServicosMecanicos";
 import '../css/cardPrestador.css';
 
 function CardPrestador() {

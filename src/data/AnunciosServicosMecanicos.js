@@ -1,7 +1,7 @@
 import AugustoPessoa from '../img/augusto-pessoa.png';
 import FernandoAlmeida from '../img/fernando-almeida.png';
 
-const ServicosMecanicos = [
+const AnunciosServicosMecanicos = [
     {
         imagem: AugustoPessoa,
         nome: 'Fernando Almeida',
@@ -24,4 +24,4 @@ const ServicosMecanicos = [
     },
 ]
 
-export default ServicosMecanicos;
+export default AnunciosServicosMecanicos;

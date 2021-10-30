@@ -11,42 +11,50 @@ const categorias = [
     {
         id: 0,
         title: "Serviços Mecânicos",
-        image: sMecanicos
+        image: sMecanicos,
+        route: "/ServicosMecanicos"
     },
     {
         id: 1,
         title: "Serviços Elétricos",
-        image: sEletricos
+        image: sEletricos,
+        route: "/ServicosMecanicos"
     },
     {
         id: 2,
         title: "Serviços de Limpeza",
-        image: sLimpeza
+        image: sLimpeza,
+        route: "/ServicosMecanicos"
     },
     {
         id: 3,
         title: "Pintura",
-        image: sPintura
+        image: sPintura,
+        route: "/ServicosMecanicos"
     },
     {
         id: 4,
         title: "Frete",
-        image: sFrete
+        image: sFrete,
+        route: "/ServicosMecanicos"
     },
     {
         id: 5,
         title: "Serviços Hidráulicos",
-        image: SHidraulicos
+        image: SHidraulicos,
+        route: "/ServicosMecanicos"
     },
     {
         id: 6,
         title: "Serviços de Babá",
-        image: sBaba
+        image: sBaba,
+        route: "/ServicosMecanicos"
     },
     {
         id: 7,
         title: "Ar-Condicionado",
-        image: sArCondicionado
+        image: sArCondicionado,
+        route: "/Teste"
     }    
 ]
 
