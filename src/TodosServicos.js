@@ -18,7 +18,7 @@ function TodosServicos () {
                 <MenuVertical options={options} selected="Todos Serviços"/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="J" nome="João"/>
-                    <TitleBar step1="Todos os Serviços"/>
+                    <TitleBar step1="Todos os Serviços" route1="/Todos Serviços"/>
                     <CardCategorias/>
                 </section>
             </main>

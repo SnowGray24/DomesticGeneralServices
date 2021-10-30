@@ -16,7 +16,7 @@ function ServicosMecanicos() {
                 <MenuVertical options={options} selected="Todos Serviços"/>
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="J" nome="João"/>
-                    <TitleBar step1="Todos os Serviços"/>
+                    <TitleBar step1="Todos os Serviços" route1="/Todos Serviços" step2="> Serviços Mecânicos" route2="/ServicosMecanicos"/>
                     <CardPrestador/>
                 </section>
             </main>
