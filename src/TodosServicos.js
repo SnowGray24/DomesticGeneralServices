@@ -19,7 +19,10 @@ function TodosServicos () {
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="J" nome="João"/>
                     <TitleBar step1="Todos os Serviços" route1="/Todos Serviços"/>
-                    <CardCategorias/>
+                    <div style={{padding: '25px 30px', display: 'flex', flexDirection: 'column'}}> 
+                        <h3>Encontre serviços por categoria</h3>
+                        <CardCategorias/>
+                    </div>
                 </section>
             </main>
         </div>
