@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import MenuVertical from "./components/MenuVertical";
 import TitleBar from "./components/TitleBar";
 import OptionsMenuContratante from './data/OpcoesMenuContratante';
-import './css/servicosMecanicos.css';
+import './css/layout.css';
 
 
 function ServicosMecanicos() {

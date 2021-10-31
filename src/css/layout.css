@@ -10,6 +10,12 @@
     display: flex;
     align-items:stretch;
 }
+
+.main{
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+}
 /*********************************/
 
 

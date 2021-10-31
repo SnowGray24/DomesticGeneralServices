@@ -2,8 +2,8 @@ import OptionsMenuContratante from './data/OpcoesMenuContratante';
 import CardCategorias from "./components/CardCategorias";
 import TitleBar from './components/TitleBar';
 import MenuVertical from './components/MenuVertical';
-import TabBarHorizontal from './components/TabBarHorizontal';
 import Header from './components/Header';
+import './css/layout.css';
 
 function TodosServicos () {
     let CardCategoria = <CardCategorias/>
@@ -19,7 +19,7 @@ function TodosServicos () {
                 <section style={{width: '100%', color: 'rgba(0, 0, 0, 0.5)'}}>
                     <Header letraPerfil="J" nome="João"/>
                     <TitleBar step1="Todos os Serviços" route1="/Todos Serviços"/>
-                    <div style={{padding: '25px 30px', display: 'flex', flexDirection: 'column'}}> 
+                    <div className="main"> 
                         <h3>Encontre serviços por categoria</h3>
                         <CardCategorias/>
                     </div>
