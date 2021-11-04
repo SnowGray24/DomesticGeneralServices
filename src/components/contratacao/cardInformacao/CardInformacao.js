@@ -13,7 +13,7 @@ const CardInformacao = () =>{
     )
 
     return (
-        <div style={{padding: '15px'}}>
+        <div style={{padding: '18px', border: '1px solid rgba(235, 235, 235, 1)', borderRadius: '5px', width: '522px', marginLeft: '13px'}}>
             <h5>Detalhes do Prestador</h5>
 
             <Campo nome="Nome" info={perfilPessoa.nome}></Campo>

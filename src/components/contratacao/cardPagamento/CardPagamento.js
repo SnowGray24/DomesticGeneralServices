@@ -28,8 +28,8 @@ const CardPagamento = () =>{
                 </div>
             </div>
 
-            <div className="flex-item-right" style={{width: '200px'}}>
-                <label style={{fontWeight: '500'}}>Contato</label>
+            <div style={{width: '190px'}}>
+                <label style={{fontWeight: '500', letterSpacing: '.9px'}}>Contato</label>
 
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <div style={{paddingLeft: '4px', paddingRight:'4px'}}>

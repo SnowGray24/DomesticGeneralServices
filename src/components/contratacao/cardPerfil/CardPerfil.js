@@ -34,7 +34,7 @@ const CardPerfil = () =>{
     }
 
     return (
-        <div className="pageCentralizar">
+        <div className="pageCentralizar" style={{width: '415px', padding: '26px', border: '1px solid rgba(235, 235, 235, 1)', borderRadius: '5px' }}>
 
             { /*  Sigla do nome  */ }
             <Avatar siglaName={perfilPessoa.sigla} cor="#328754" altura="80px" largura="80px"></Avatar>
