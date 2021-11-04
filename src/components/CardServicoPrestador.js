@@ -12,10 +12,6 @@ function CardServicoPrestador () {
 
     newArray= services
     
-    useEffect(()=>{
-        setServices(newArray)
-    },[])
-    
 
     const ExcluirServico = (item)=> {
 
