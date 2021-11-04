@@ -34,7 +34,7 @@ const CardPerfil = () =>{
     }
 
     return (
-        <div className="pageCentralizar" style={{width: '415px', padding: '26px', border: '1px solid rgba(235, 235, 235, 1)', borderRadius: '5px', marginBottom: '19px', maxHeight: '415px' }}>
+        <div className="pageCentralizar" style={{width: '415px', padding: '0 20px', border: '1px solid rgba(235, 235, 235, 1)', borderRadius: '5px', marginBottom: '19px', maxHeight: '415px' }}>
 
             { /*  Sigla do nome  */ }
             <Avatar siglaName={perfilPessoa.sigla} cor="#328754" altura="80px" largura="80px"></Avatar>
@@ -51,7 +51,7 @@ const CardPerfil = () =>{
             </div>
 
             { /*  Descrição  */ }
-            <div style={{fontSize: '16px', color: 'rgba(0, 0, 0, 0.65)', lineHeight: '20px'}}>
+            <div style={{fontSize: '16px', color: 'rgba(0, 0, 0, 0.65)', lineHeight: '20px', textAlign: 'center', marginTop: '3px'}}>
                 { perfilPessoa.descricao }
             </div>
 

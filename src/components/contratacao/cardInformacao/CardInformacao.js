@@ -24,7 +24,7 @@ const CardInformacao = () =>{
             <Campo nome="Cidade de atendimento" info={perfilPessoa.cidadeAtendimento}></Campo>
             <Campo nome="Serviços" info={''}></Campo>
 
-            <div style={{display: 'grid', gridTemplateColumns: '100px 100px 100px 100px'}}>
+            <div style={{display: 'grid', gridTemplateColumns: '100px 100px 100px 100px', gridGap: '8px', marginTop: '8px'}}>
                 {listOptions}
             </div>
         </div>
