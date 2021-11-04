@@ -2,14 +2,38 @@ import "../../../css/configCSS.css"
 import Avatar from './avatar/Avatar';
 import perfilPessoa from '../../../data/User';
 import React, {useState} from 'react';
+import meusPedidosContratante from '../../../data/MeusPedidos';
+import isFinished from "../../../img/icones/okay.PNG";
+
+ let item =
+        {
+            id: 88,
+            title: "Serviço de Mecânica",
+            prediction: "Previsão de término em 3 dias.",
+            isFinished: true,
+            image: isFinished
+        }
+    
 
 const CardPerfil = () =>{
-
+    
     const [hired, setHired] = useState(perfilPessoa.isHired);
+    const [meusPedidos, setMeusPedidos] = useState(meusPedidosContratante);
+
+
+    
+    let newArray = []
+    newArray= meusPedidos
 
     const chanceHired = () =>{
         if (perfilPessoa.isHired === false){
             perfilPessoa.isHired = true;
+          //  newArray.push(item)
+            meusPedidosContratante.push(item)
+           // setMeusPedidos(newArray)
+            console.log(meusPedidosContratante)
+
+          
         }else{
             perfilPessoa.isHired = false;
         }
