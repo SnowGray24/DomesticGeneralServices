@@ -5,6 +5,7 @@ import React from 'react';
 import CardServicoSolicitado from './CardServicoSolicitado';
 import TabBarHorizontal from './TabBarHorizontal';
 import MeusPedidosItens from '../data/MeusPedidosItens';
+import servicosFinalizados from '../data/ServicosFinalizados';
 
 
 function MeusPedidos(){
@@ -22,7 +23,7 @@ function MeusPedidos(){
 
     return (
         <div>
-            <TabBarHorizontal card={card} inProgressChecked={true} finishedChecked={false} />
+            <TabBarHorizontal card={card} finalizados={servicosFinalizados} inProgressChecked={true} finishedChecked={false} />
         </div>
     );
 }

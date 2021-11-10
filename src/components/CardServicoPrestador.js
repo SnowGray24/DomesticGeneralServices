@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import myServices from "../data/CardsPrestador";
 import '../css/homePages.css';
+import servicosFinalizados from "../data/ServicosFinalizados";
 
 function CardServicoPrestador () {
 
     const [services, setServices] = useState(myServices);
-    const [finishedServices, setFinishedServices] = useState([]);
+    const [finishedServices, setFinishedServices] = useState(servicosFinalizados);
 
     
     let newArray = []
@@ -43,6 +44,7 @@ function CardServicoPrestador () {
         let newArrayFinalizados = finishedServices
         newArrayFinalizados.push(...ServicoMarcadoComoFinalizado)
         setFinishedServices(newArrayFinalizados)
+        servicosFinalizados.push(...newArrayFinalizados)
     }
     
     return (

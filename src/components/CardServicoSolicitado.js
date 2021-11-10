@@ -5,6 +5,9 @@ import '../css/button.css';
 import MeusPedidosItens from '../data/MeusPedidosItens';
 
 function CardServicoSolicitado () {
+    function FinalizarServico () {
+
+    }
     return (
         <div style={{padding: '25px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
             {MeusPedidosItens.map((item, index)=>(
@@ -20,7 +23,7 @@ function CardServicoSolicitado () {
                     <p style={{marginBottom: '25px', fontSize: '16px'}}>{item.prediction}</p>
                     {item.isFinished
                     ? <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <button className="btFinalizarServicos">Finalizar</button>
+                        <button className="btFinalizarServicos" onClick={()=>{FinalizarServico(item)}}>Finalizar</button>
                     </div>
                     : <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <button className="btExcluirServicos" style={{marginRight: '20px'}}>Excluir</button>

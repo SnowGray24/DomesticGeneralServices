@@ -44,7 +44,7 @@ function TabBarHorizontal(props) {
               {props.card}
               </>
             : <>
-              <h1>Nada aqui ainda</h1>
+              
               </>
             }
         </div>
