@@ -4,6 +4,7 @@ import '../css/button.css';
 import React from 'react';
 import CardServicoPrestador from './CardServicoPrestador';
 import myServices from '../data/CardsPrestador';
+import servicosFinalizados from '../data/ServicosFinalizados';
 import TabBarHorizontal from './TabBarHorizontal';
 import TitleBar from './TitleBar';
 
@@ -26,7 +27,7 @@ function MeusServicos(){
 
     return (
         <div>
-            <TabBarHorizontal card={card} inProgressChecked={true} finishedChecked={false} />
+            <TabBarHorizontal card={card} finalizados={servicosFinalizados} inProgressChecked={true} finishedChecked={false} />
         </div>
     );
 }

@@ -10,6 +10,7 @@ import HomePageContratante from "./HomePageContratante";
 import TodosServicos from './TodosServicos';
 import PageTestes from "./Testes";
 import ServicosMecanicos from "./ServicosMecanicos";
+import Contratacao from "./Contratacao";
 
 const Routes = () => {
    return(
@@ -22,6 +23,7 @@ const Routes = () => {
            <Route component = { HomePageContratante } path="/Meus Pedidos" />
            <Route component = { TodosServicos } path="/Todos Serviços" />
            <Route component = { ServicosMecanicos } path="/ServicosMecanicos" />
+           <Route component = { Contratacao } path="/Contratacao" />
            <Route component = { PageTestes } path="/Teste" />
 
        </BrowserRouter>

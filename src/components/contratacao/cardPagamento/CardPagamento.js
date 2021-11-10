@@ -10,7 +10,7 @@ const CardPagamento = () =>{
 
     return (
         <div className="flex-container" style={{fontSize: '16px', color: 'rgba(0, 0, 0, 0.65)'}}>
-            <div className="flex-item-left" style={{width: '200px'}}>
+            <div  style={{width: '200px'}}>
                 <label style={{fontWeight: '500'}}>Formas de Pagamento</label>
                 
                 <div style={{display: 'flex', justifyContent: 'space-around'}}>
@@ -28,8 +28,8 @@ const CardPagamento = () =>{
                 </div>
             </div>
 
-            <div className="flex-item-right" style={{width: '200px'}}>
-                <label style={{fontWeight: '500'}}>Contato</label>
+            <div style={{width: '190px'}}>
+                <label style={{fontWeight: '500', letterSpacing: '.9px'}}>Contato</label>
 
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <div style={{paddingLeft: '4px', paddingRight:'4px'}}>

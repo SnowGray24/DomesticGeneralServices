@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 function CardCategorias () {
     return (
         <div className="Container">
-            <h3>Encontre Serviços por Categoria</h3>
             <div className="CategoryCardsContainer">
                 {CardsCategorias.map((item, index)=>(
                 <Link className="Link-card" to={item.route}>
