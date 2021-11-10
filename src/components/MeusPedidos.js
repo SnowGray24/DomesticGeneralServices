@@ -13,7 +13,7 @@ function MeusPedidos(){
     let card
     const verificationItens = () =>{
          if (MeusPedidosItens.length === 0){
-             card=<h5 style={{fontWeight: 'bold'}}>Nenhuma solicitação de serviços por aqui!</h5>
+             card=<h5 style={{fontWeight: 'bold', height: 'calc(100vh - 200px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>Nenhuma solicitação de serviços por aqui!</h5>
             }else{
             card= <CardServicoSolicitado/>
         }
