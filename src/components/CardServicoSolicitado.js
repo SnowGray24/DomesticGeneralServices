@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/configCSS.css';
 import '../css/homePages.css';
 import '../css/button.css';
 import MeusPedidosItens from '../data/MeusPedidosItens';
+import servicosFinalizados from "../data/ServicosFinalizados";
 
 function CardServicoSolicitado () {
-    function FinalizarServico () {
 
+    const [services, setServices] = useState(MeusPedidosItens);
+    const [finishedServices, setFinishedServices] = useState(servicosFinalizados);
+
+        
+    let newArray = []
+
+    newArray= MeusPedidosItens
+    
+
+function FinalizarServico(item) {
+        
+        /* Retirando do Array de serviços em andamento*/
+        let newArrayServices = services
+        let index = newArrayServices.indexOf(item)
+        
+        let ServicoMarcadoComoFinalizado = newArrayServices.splice(index, 1)
+
+        setServices(newArrayServices)
+        
+        let cardContainer = document.getElementsByClassName("containerCard")[index]
+        cardContainer.remove()
+
+        /* Inserindo no Array de serviços finalizados*/
+        let newArrayFinalizados = finishedServices
+        newArrayFinalizados.push(...ServicoMarcadoComoFinalizado)
+        setFinishedServices(newArrayFinalizados)
+        servicosFinalizados.push(...newArrayFinalizados)
     }
+
     return (
         <div style={{padding: '25px', display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
             {MeusPedidosItens.map((item, index)=>(

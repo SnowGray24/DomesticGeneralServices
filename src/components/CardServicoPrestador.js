@@ -28,16 +28,17 @@ function CardServicoPrestador () {
 
 
     
-    function FinalizarServico(idItem) {
+    function FinalizarServico(item) {
         
         /* Retirando do Array de serviços em andamento*/
         let newArrayServices = services
+        let index = newArrayServices.indexOf(item)
         
-        let ServicoMarcadoComoFinalizado = newArrayServices.splice(idItem, 1)
+        let ServicoMarcadoComoFinalizado = newArrayServices.splice(index, 1)
 
         setServices(newArrayServices)
         
-        let cardContainer = document.getElementsByClassName("containerCard")[idItem]
+        let cardContainer = document.getElementsByClassName("containerCard")[index]
         cardContainer.remove()
 
         /* Inserindo no Array de serviços finalizados*/
@@ -63,7 +64,7 @@ function CardServicoPrestador () {
                     <p style={{marginBottom: '25px', fontSize: '16px'}}>{item.prediction}</p>
                     {item.isFinished
                     ? <div style={{display: 'flex', justifyContent: 'flex-end'}}>
-                        <button className="btFinalizarServicos" onClick={()=>{FinalizarServico(item.id)}}>Finalizar</button>
+                        <button className="btFinalizarServicos" onClick={()=>{FinalizarServico(item)}}>Finalizar</button>
                         </div>
                     : <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                         <button className="btExcluirServicos" style={{marginRight: '20px'}} onClick={()=>{ExcluirServico(item)}}>Excluir</button>
