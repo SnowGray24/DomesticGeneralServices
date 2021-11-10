@@ -2,7 +2,7 @@ import "../../../css/configCSS.css"
 import Avatar from './avatar/Avatar';
 import perfilPessoa from '../../../data/User';
 import React, {useState} from 'react';
-import meusPedidosContratante from '../../../data/MeusPedidos';
+import meusPedidosContratante from '../../../data/MeusPedidosItens';
 import isFinished from "../../../img/icones/okay.PNG";
 
  let item =
