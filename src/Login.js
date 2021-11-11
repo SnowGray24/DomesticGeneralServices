@@ -9,6 +9,8 @@ import iconeOlho from './img/icones/view.PNG';
 import React, {useState} from 'react';
 import {Form, FormGroup, Label, Input } from 'reactstrap';
 
+import AllUser from "./data/AllUser";
+
 function Login (){
 
     const [typeInput, setTypeInput] = useState('password')
@@ -21,6 +23,26 @@ function Login (){
         }
         
     } 
+
+    const [inputPassword, setInputPassword] = useState('')
+    const [inputEmail, setInputEmail] = useState('')
+    const [error, setError] = useState('')
+
+    //Processo para realizar login
+    const loginProcess = (event) =>{
+        event.preventDefault();
+        if (inputEmail === "adm@exemplo" && inputPassword === "adm"){
+            window.location.replace("/Meus Pedidos")
+        }else if (inputEmail === "adm2@exemplo" && inputPassword === "123"){
+            window.location.replace("/Meus Serviços")
+        }else{
+            setError(
+                <div style={{backgroundColor: 'red', color: 'white', padding: '1em', marginTop: '1em', borderRadius: '1em'}}>
+                    Login ou senha incorretos
+                </div>
+            )
+        }
+    }
 
     return (
         <div style={{display: "flex"}}>
@@ -45,7 +67,7 @@ function Login (){
                                 <img style={{ marginLeft: '10px'}} height="22" src={iconeEmail} alt="" />
                             </span>
                         </div>
-                        <Input className="bordarInputLogin" type="email" placeholder="E-mail" />
+                        <Input onChange={(e) => setInputEmail(e.target.value)}  className="bordarInputLogin" type="email" placeholder="E-mail" />
                     </FormGroup>
 
                     <FormGroup style={{marginTop: "15px", display: 'flex'}}>
@@ -55,7 +77,7 @@ function Login (){
                             </span>
                         </div>
 
-                        <Input id="loginPassword" className="bordarInputSenha" type={typeInput} placeholder="Senha" />
+                        <Input onChange={(e) => setInputPassword(e.target.value)}  id="loginPassword" className="bordarInputSenha" type={typeInput} placeholder="Senha" />
 
                         <div className="bordarButtonEye" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                             <span style={{width: '36px'}}>
@@ -70,9 +92,11 @@ function Login (){
                     </div>
 
                     <FormGroup style={{display: "flex", alignItems: "center", flexDirection: "column", marginTop: "41px"}}>
-                        <button className="btAzul">Login</button>
+                        <button className="btAzul" onClick={loginProcess}>Login</button>
                     </FormGroup>
                 </Form>
+
+                {error}
 
                 <p style={{marginTop: "21px", color: 'rgba(0, 0, 0, 0.65)'}}>Não tem uma conta? <a href="/" style={{color: 'rgba(50, 61, 135, 1)'}}>Cadastra-se</a></p>
             
