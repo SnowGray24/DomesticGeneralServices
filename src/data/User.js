@@ -25,7 +25,7 @@ let User = {
             },
             {
                 name: "Mecânica",
-                isActive: false,
+                isActive: true,
             },
             {
                 name: "Elétrica",

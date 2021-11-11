@@ -7,7 +7,7 @@ import CardPrestador from './components/CardPrestador';
 const Teste = () =>{
     return (
         <div>
-            <CardPagamento />
+            
             <CardPrestador/>
             <CardPerfil/>
             <CardInformacao/>
