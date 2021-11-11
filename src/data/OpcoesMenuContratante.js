@@ -12,19 +12,19 @@ const opcoesMenuContratante = [
         opcao: 'Meus Pedidos',
         imagemSelected: taskSelected,
         imagemNoSelected : task,
-        selected: false
+        selected: false,
     },
     {
         opcao: 'Todos Serviços',
         imagemSelected: servicosSelected,
         imagemNoSelected : servicos,
-        selected: false
+        selected: false,
     },
     {
         opcao: 'Meu Perfil',
         imagemSelected: perfilSelected,
         imagemNoSelected : perfil,
-        selected: false
+        selected: false,
     },
     {
         opcao: 'Ajuda',

@@ -228,7 +228,29 @@ function CadastroPrestador (){
                         </Label>
                     </FormGroup>
 
+                    <FormGroup check inline>
+                        <Label check>
+                        <Input type="checkbox" /> Elétrica
+                        </Label>
+                    </FormGroup>
 
+                    <FormGroup check inline>
+                        <Label check>
+                        <Input type="checkbox" /> Babá
+                        </Label>
+                    </FormGroup>
+
+                    
+                    <FormGroup check inline>
+                        <Label check>
+                        <Input type="checkbox" /> Reforma
+                        </Label>
+                    </FormGroup>
+
+                    <FormGroup>
+                        <Label for="exampleCidade"><span className="campoObrigatorio">*</span> Cidade de prestação de serviço</Label>
+                        <Input type="textarea" name="cidade" id="exampleCidade" />
+                    </FormGroup>
 
                     <FormGroup>
                         <Label for="exampleDescricao"><span className="campoObrigatorio">*</span> Descrição</Label>

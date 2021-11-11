@@ -8,9 +8,9 @@ const Teste = () =>{
     return (
         <div>
             
-            <CardInformacao />
-            <CardPerfil />
-            <CardPagamento />
+            <CardPrestador/>
+            <CardPerfil/>
+            <CardInformacao/>
         </div>
     )
 }
